@@ -1,0 +1,34 @@
+Design Document V1
+
+Space Captian (name TBD) is a game about managing a large space fleet,
+gathering resources, and colonizing planets. The primary focus is for
+the player to have fun meticulously designing different ships, stations,
+and other structures, then deploying them all across the galexy.
+
+
+Ships:
+A ship is made of rooms, each made out of a variety of internal and external materials.
+Each room can have furnature, systems, or transports like wires or pipes.
+A ship has a total mass, amount of fuel and other supplies, a crew (unless automated)
+thrusters, and weapons or tools, which use materials or fuels.
+
+Rooms:
+A room has an exterior and interior material. It has furnature or systems inside it.
+It can be walked on by crew members. A room can store items, fuels, or crew members.
+A room can be marked as a specific type of room (kitchen, gym, dorm, bridge, storage, etc)
+Rooms have atmosphere and are connected by doors. 
+The exterior state and door state will effect the atmosphere.
+Crew members, systems, or hazards such as fires will effect the atmosphere, and vice versa.
+
+Systems:
+A system has a purpose, such as a generator or battery.
+A system can have a physical and/or fuel storage.
+Some systems take a input(s) and generate output(s).
+
+Exterior tools:
+Exterior tools can be weapons, solar panels, beacons, etc.
+They can consume resources to interact with the world, or vice versa.
+
+Furnature:
+Furnature has a visual and physical quality, usually directly proportional to its price.
+Furnature may hold items or crew members. They can be attatched to the ground, moved or destroyed.
