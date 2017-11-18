@@ -32,3 +32,18 @@ They can consume resources to interact with the world, or vice versa.
 Furnature:
 Furnature has a visual and physical quality, usually directly proportional to its price.
 Furnature may hold items or crew members. They can be attatched to the ground, moved or destroyed.
+
+Materials:
+Materials have a density. They can be airtight, flamible, conductive, transparent.
+Materials are gathered from ores and are refined in systems.
+Materials are things like metal bars, chain links, rubber sheets etc.
+
+Fuels:
+Fuels are used to power systems. They are stored in systems such as tanks or batteries.
+Fuels are moved around through things like pipes or wires that can be in the walls of a room
+Fuel examples: electric charge, gasoline
+
+Transports:
+Fuels are moved from place to place through transports.
+Transports have a fuel type (liquid, electrical ect.) and a max rate of transfer
+Transports also have a specific direction, and know which transport comes next
