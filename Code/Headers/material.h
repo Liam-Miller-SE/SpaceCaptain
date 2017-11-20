@@ -1,9 +1,13 @@
+#include <string>
 using namespace std;
+
+#ifndef material_h
+#define material_h
 
 class Material
 {
     private:
-    char* name;
+    string name;
     float density;
     bool isAirtight;
     bool isFlamible;
@@ -11,15 +15,16 @@ class Material
     bool isTransparent;
 
     public:
-    Material(char* _name);
-    Material(char* _name, float _density);
-    Material(char* _name, 
+    Material(string _name);
+    Material(string _name, float _density);
+    Material(string _name, 
         float _density,
         bool _isAirtight, 
         bool _isFlamible,
         bool _isConductive,
         bool _isTransparent);
     
-    char* getName();
+    string getName();
     float getDensity();
 };
+#endif

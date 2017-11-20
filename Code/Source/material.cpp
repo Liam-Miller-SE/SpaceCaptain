@@ -1,40 +1,37 @@
-#include "material.h"
+#include "../Headers/material.h"
 
-class Material
+Material::Material(string _name)
 {
-    Material::Material(char* _name)
-    {
-        Material::name = _name;
-    }
+    name = _name;
+}
 
-    Material::Material(char* _name, float _density)
-    {
-        Material::name = _name;
-        Material::density = _density;
-    }
+Material::Material(string _name, float _density)
+{
+    name = _name;
+    density = _density;
+}
 
-    Material::Material(char* _name, 
-        float _density,
-        bool _isAirtight, 
-        bool _isFlamible,
-        bool _isConductive,
-        bool _isTransparent);
-    {
-        Material::name = _name;
-        Material::density = _density;
-        Material::isAirtight = _isAirtight; 
-        Material::isFlamible = _isFlamible;
-        Material::isConductive = _isConductive;
-        Material::isTransparent = _isTransparent;
-    }
+Material::Material(string _name,
+                   float _density,
+                   bool _isAirtight,
+                   bool _isFlamible,
+                   bool _isConductive,
+                   bool _isTransparent)
+{
+    name = _name;
+    density = _density;
+    isAirtight = _isAirtight;
+    isFlamible = _isFlamible;
+    isConductive = _isConductive;
+    isTransparent = _isTransparent;
+}
 
-    char* Material::getName()
-    {
-        return Material::name;
-    }
+string Material::getName()
+{
+    return name;
+}
 
-    float Material::getDensity()
-    {
-        return Material::density;
-    }
-};
+float Material::getDensity()
+{
+    return density;
+}
