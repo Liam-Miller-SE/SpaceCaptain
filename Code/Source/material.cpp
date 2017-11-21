@@ -1,5 +1,16 @@
 #include "../Headers/material.h"
 
+Material::Material()
+{
+    name = "DEFAULT_NAME";
+}
+
+Material::Material(float _density)
+{
+    name = "DEFAULT_NAME";
+    density = _density;
+}
+
 Material::Material(string _name)
 {
     name = _name;

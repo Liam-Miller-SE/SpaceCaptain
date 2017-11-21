@@ -15,14 +15,16 @@ class Material
     bool isTransparent;
 
     public:
-    Material(string _name);
-    Material(string _name, float _density);
-    Material(string _name, 
-        float _density,
-        bool _isAirtight, 
-        bool _isFlamible,
-        bool _isConductive,
-        bool _isTransparent);
+    Material();
+    Material(float /*_density*/);
+    Material(string /*_name*/);
+    Material(string /*_name*/, float /*_density*/);
+    Material(string /*_name*/, 
+        float /*_density*/,
+        bool /*_isAirtight*/, 
+        bool /*_isFlamible*/,
+        bool /*_isConductive*/,
+        bool /*_isTransparent*/);
     
     string getName();
     float getDensity();
