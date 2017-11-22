@@ -9,6 +9,7 @@ class Material
     private:
     string name;
     float density;
+    float volume;
     bool isAirtight;
     bool isFlamible;
     bool isConductive;
@@ -16,15 +17,15 @@ class Material
 
     public:
     Material();
-    Material(float /*_density*/);
-    Material(string /*_name*/);
-    Material(string /*_name*/, float /*_density*/);
-    Material(string /*_name*/, 
-        float /*_density*/,
-        bool /*_isAirtight*/, 
-        bool /*_isFlamible*/,
-        bool /*_isConductive*/,
-        bool /*_isTransparent*/);
+    Material(float _density);
+    Material(string _name);
+    Material(string _name, float _density);
+    Material(string _name, 
+        float _density,
+        bool _isAirtight, 
+        bool _isFlamible,
+        bool _isConductive,
+        bool _isTransparent);
     
     string getName();
     float getDensity();
